@@ -1,8 +1,20 @@
 {
-"root": true,
-"env": {
-"browser": true,
-"es6": true
-},
-"extends": ["eslint:recommended", "prettier"]
+	"root": true,
+	"env": {
+		"browser": true,
+		"es6": true
+	},
+	"plugins": ["@typescript-eslint"],
+	"rules": {
+		"@typescript-eslint/no-unused-vars": [
+			"warn",
+			{
+				"argsIgnorePattern": "^_",
+				"varsIgnorePattern": "^_",
+				"caughtErrorsIgnorePattern": "^_",
+				"destructuredArrayIgnorePattern": "^_"
+			}
+		]
+	},
+	"extends": ["eslint:recommended", "prettier"]
 }

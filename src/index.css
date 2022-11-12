@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Shirokuma';
-    src: local('Shirokuma'), url(./fonts/001Shirokuma-Regular.otf) format('opentype');
-}
-
-body {
-    margin: 0;
+	font-family: "Shirokuma";
+	src: local("Shirokuma"), url(./fonts/001Shirokuma-Regular.otf) format("opentype");
 }
