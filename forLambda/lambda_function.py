@@ -18,6 +18,9 @@ logger = logging.getLogger()
 def lambda_handler(event, context):
     # shop_list, url = tabelog_search_query("横浜", "焼肉", context)
     shop_list = tabelog_search_query("横浜", "焼肉", context)
+    shop_list = get_google_map_info(shop_list)
+    shop_list = get_retty_info(shop_list)
+        
     print(shop_list)
     
     return {
@@ -34,23 +37,11 @@ def lambda_handler(event, context):
 
 def tabelog_search_query(area_query, keyword_query, context):
     driver = setting_chromium()
-    # driver.set_window_size(1280,1696)
     driver.get('https://tabelog.com/')
   
     driver.find_element_by_id("sa").send_keys(area_query)
     driver.find_element_by_id("sk").send_keys(keyword_query)
     driver.find_element_by_id("js-global-search-btn").click()
-    
-# def extract():
-#     url = driver.find_elements_by_xpath('//script[@async="true"]')[2].get_attribute("src")
-#     driver.quit()
-#     url = decode_url(url)
-#     url += "&SrtT=rvcn" # 口コミ数順でソート
-    
-#     driver = setting_chromium
-#     driver.set_window_size(1280,1696)
-#     driver.get(url)()
-#     return driver.page_source, url
     
     #数ページクローリング
     shop_num = int(driver.find_elements_by_class_name("c-page-count__num")[2].text)
@@ -108,25 +99,63 @@ def shop_list_to_dict(shop_list, pageurl):
         except AttributeError:
             continue
     return shop_list
-
-def next_btn_click(driver):
-    try:
-        # 次へボタン
-        elem_btn = WebDriverWait(driver, 10).until(
-            EC.visibility_of_element_located((By.CLASS_NAME, "c-pagination__arrow--next"))
-        )
-        actions = ActionChains(driver)
-        actions.move_to_element(elem_btn)
-        actions.click(elem_btn)
-        actions.perform()
- 
-        # 間隔を設ける(秒単位）
-        time.sleep(INTERVAL_TIME)
-        return True
- 
-    except Exception as e:
-        print("Exception\n" + traceback.format_exc())
-        return False
+    
+def get_google_map_info(shop_list):
+    for shop_dict in shop_list:
+        shop_name = shop_dict["shop_name"]
+        place_id = google_map_search_id(shop_name)
+        shop_dict["google_map_rating"] = google_map_shop_details(place_id)
+    return shop_list
+    
+def google_map_shop_details(place_id):
+    place_id = "placeid=" + place_id
+    APIKey = os.environ['GOOGLEMAPAPI']
+    baseurl="https://maps.googleapis.com/maps/api/place/details/json?"
+    url = baseurl + place_id + "&key=" + APIKey
+    req=urllib.request.Request(url)
+   
+    with urllib.request.urlopen(req) as res:
+    # resは http.client.HTTPResponse
+       body = json.loads(res.read()) # レスポンスボディ
+       headers = res.getheaders() # ヘッダー(dict)
+       status = res.getcode() # ステータスコード
+       
+    #   https://gaaaon.jp/blog/google_map_api
+    # ["result"]["photos"]から画像が取れる
+    return body["result"]["rating"]
+    
+def google_map_search_id(search_query_keyword):
+    APIKey = os.environ['GOOGLEMAPAPI']
+    
+    baseurl="https://maps.googleapis.com/maps/api/place/findplacefromtext/json?"
+    input = "input=" + urllib.parse.quote(search_query_keyword)
+    url = baseurl + input + "&inputtype=textquery&key=" + APIKey
+    req=urllib.request.Request(url)
+   
+    with urllib.request.urlopen(req) as res:
+        body = json.loads(res.read())
+        headers = res.getheaders() # ヘッダー(dict)
+        status = res.getcode() # ステータスコード
+    return body["candidates"][0]["place_id"]
+    
+def get_retty_info(shop_list):
+    baseurl = "https://retty.me/restaurant-search/search-result/?free_word_category="
+    for shop_dict in shop_list:
+        search_query_quote = urllib.parse.quote(shop_dict["shop_name"])
+        r = requests.get(baseurl + search_query_quote)
+        soup = BeautifulSoup(r.content, 'html.parser')
+        shop_element = soup.find("div", class_="restaurant")
+        if shop_element is not None:
+            shop_dict["retty_url"] = shop_element.find("a", "")
+            if shop_element.find("familiar-label__title") is not None:
+                genre = shop_element.find("div", class_= "familiar-label__genre")
+                popularity = shop_element.find("div", class_= "familiar-label__popularity")
+                shop_dict["retty_popular"] = genre + popularity
+                shop_dict["retty_popular_stars"] = len(shop_element.find_all("svg", class_="familiar-label__stars"))
+            else:
+                shop_dict["retty_popular"] = ""
+                shop_dict["retty_popular_stars"] = 0
+    return shop_list
     
 def setting_chromium():
     options = Options()
@@ -134,8 +163,6 @@ def setting_chromium():
     options.add_argument('--single-process')
     options.add_argument('--disable-dev-shm-usage')
     options.add_argument("--no-sandbox")
-    # options.add_argument("--window-size=1280,1696")
-    # options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36")
     options.binary_location = "/opt/headless-chromium"
     
     
