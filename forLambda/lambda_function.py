@@ -16,8 +16,11 @@ import logging
 logger = logging.getLogger()
 
 def lambda_handler(event, context):
-    shop_list = tabelog_search_query("横浜", "焼肉", context)
+    area_query = event["queryStringParameters"]["area_query"]
+    keyword_query = event["queryStringParameters"]["keyword_query"]
+
     # shop_list = event
+    shop_list = tabelog_search_query(area_query, keyword_query, context)
     shop_list = get_google_map_info(shop_list)
     shop_list = get_retty_info(shop_list)
 
@@ -27,7 +30,6 @@ def lambda_handler(event, context):
             json.dumps({
             "res":shop_list
         }, ensure_ascii=False)
-        #'body': json.dumps('Hello from Lambda!')
     }
 
 
