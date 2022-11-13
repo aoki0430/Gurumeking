@@ -1,0 +1,614 @@
+{
+res: [
+{
+shop_name: "しげ吉 横浜元町店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140105/14014011/",
+rating: 3.67,
+dinner_price: "￥5,000～￥5,999",
+lunch_price: "￥5,000～￥5,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/10309/320x320_square_10309485.jpg",
+google_map_rating: 4.3,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 2
+},
+{
+shop_name: "ビーフキッチン 横浜店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14031061/",
+rating: 3.55,
+dinner_price: "￥6,000～￥7,999",
+lunch_price: "￥6,000～￥7,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/147391/320x320_square_147391309.jpg",
+google_map_rating: 4.2
+},
+{
+shop_name: "関内苑 本店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140104/14002802/",
+rating: 3.58,
+dinner_price: "￥6,000～￥7,999",
+lunch_price: "￥6,000～￥7,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/150602/320x320_square_150602878.jpg",
+google_map_rating: 4.2,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 2
+},
+{
+shop_name: "野毛ホルモンセンター",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140102/14045993/",
+rating: 3.49,
+dinner_price: "￥2,000～￥2,999",
+lunch_price: "￥2,000～￥2,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/40419/320x320_square_40419868.jpg",
+google_map_rating: 4.1,
+retty_familiar_genre: "ホルモン",
+retty_familiar_stars: 2
+},
+{
+shop_name: "大滝",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140104/14014394/",
+rating: 3.6,
+dinner_price: "￥6,000～￥7,999",
+lunch_price: "￥6,000～￥7,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/9413/320x320_square_9413037.jpg",
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 1
+},
+{
+shop_name: "味の牛たん 喜助 横浜ランドマーク店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140103/14037510/",
+rating: 3.44,
+dinner_price: "￥2,000～￥2,999",
+lunch_price: "￥2,000～￥2,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/182437/320x320_square_ca66259f8786ff29d59a07bb15f83386.jpg",
+google_map_rating: 4,
+retty_familiar_genre: "",
+retty_familiar_stars: 0
+},
+{
+shop_name: "立喰い焼肉 治郎丸 野毛店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140102/14057942/",
+rating: 3.53,
+dinner_price: "￥1,000～￥1,999",
+lunch_price: "￥1,000～￥1,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/173022/320x320_square_60e1f6b0b51589e9ad65700e2dfe482a.jpg",
+google_map_rating: 3.9
+},
+{
+shop_name: "焼肉うしごろ 横浜店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14080409/",
+rating: 3.74,
+dinner_price: "￥8,000～￥9,999",
+lunch_price: "￥8,000～￥9,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/175683/320x320_square_fbb5b12c4aeefc1ae6c932df0a22e084.jpg",
+google_map_rating: 4
+},
+{
+shop_name: "壱語屋 たまプラーザ店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140201/14002714/",
+rating: 3.48,
+dinner_price: "￥3,000～￥3,999",
+lunch_price: "￥3,000～￥3,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/3147/320x320_square_3147380.jpg",
+google_map_rating: 4.2,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 1
+},
+{
+shop_name: "ホルモン・ジンギスカン たたら",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14005314/",
+rating: 3.48,
+dinner_price: "￥2,000～￥2,999",
+lunch_price: "￥2,000～￥2,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/5556/320x320_square_5556261.jpg",
+google_map_rating: 3.9,
+retty_familiar_genre: "羊肉",
+retty_familiar_stars: 0
+},
+{
+shop_name: "炭焼喰人 本店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140203/14001884/",
+rating: 3.59,
+dinner_price: "￥6,000～￥7,999",
+lunch_price: "￥6,000～￥7,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/3348/320x320_square_3348369.jpg",
+google_map_rating: 4.1,
+retty_familiar_genre: "ホルモン",
+retty_familiar_stars: 1
+},
+{
+shop_name: "焼肉 大衆",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140102/14000451/",
+rating: 3.49,
+dinner_price: "￥3,000～￥3,999",
+lunch_price: "￥3,000～￥3,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/113/320x320_square_113619.jpg",
+google_map_rating: 4.2,
+retty_familiar_genre: "ホルモン",
+retty_familiar_stars: 2
+},
+{
+shop_name: "横浜焼肉kintan",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14079435/",
+rating: 3.5,
+dinner_price: "￥8,000～￥9,999",
+lunch_price: "￥8,000～￥9,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/132061/320x320_square_132061962.jpg",
+google_map_rating: 3.8,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 1
+},
+{
+shop_name: "焼肉トラジ 新横浜店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140206/14012251/",
+rating: 3.44,
+dinner_price: "￥6,000～￥7,999",
+lunch_price: "￥6,000～￥7,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/88246/320x320_square_88246226.jpg",
+google_map_rating: 4.1,
+retty_familiar_genre: "",
+retty_familiar_stars: 0
+},
+{
+shop_name: "叙々苑 横浜ハマボールイアス店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14015581/",
+rating: 3.35,
+dinner_price: "￥6,000～￥7,999",
+lunch_price: "￥6,000～￥7,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/171251/320x320_square_e44db4af05e303f2f976c94a09bbfce1.jpg",
+google_map_rating: 4.2,
+retty_familiar_genre: "",
+retty_familiar_stars: 0
+},
+{
+shop_name: "焼肉ぽんが 横浜店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14076912/",
+rating: 3.42,
+dinner_price: "￥5,000～￥5,999",
+lunch_price: "￥5,000～￥5,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/130782/320x320_square_130782410.jpg",
+google_map_rating: 4.3
+},
+{
+shop_name: "土古里 ルミネ横浜店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14015133/",
+rating: 3.35,
+dinner_price: "￥5,000～￥5,999",
+lunch_price: "￥5,000～￥5,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/122446/320x320_square_122446943.jpg",
+google_map_rating: 3.6,
+retty_familiar_genre: "",
+retty_familiar_stars: 0
+},
+{
+shop_name: "吾照里 横浜東口ポルタ店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14035240/",
+rating: 3.23,
+dinner_price: "￥3,000～￥3,999",
+lunch_price: "￥3,000～￥3,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/67579/320x320_square_67579906.jpg",
+google_map_rating: 3.4,
+retty_familiar_genre: "",
+retty_familiar_stars: 0
+},
+{
+shop_name: "YAKINIKU 和牛ラボ 横浜店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14081034/",
+rating: 3.4,
+dinner_price: "￥6,000～￥7,999",
+lunch_price: "￥6,000～￥7,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/161283/320x320_square_161283202.jpg",
+google_map_rating: 3.4
+},
+{
+shop_name: "つる屋",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140104/14000856/",
+rating: 3.56,
+dinner_price: "￥8,000～￥9,999",
+lunch_price: "￥8,000～￥9,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/178221/320x320_square_750e17569411da2606baefec028b633e.jpg",
+google_map_rating: 3.3,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 1
+},
+{
+shop_name: "大徳壽 関内本店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140104/14001870/",
+rating: 3.54,
+dinner_price: "￥6,000～￥7,999",
+lunch_price: "￥6,000～￥7,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/105957/320x320_square_105957753.jpg",
+google_map_rating: 4
+},
+{
+shop_name: "焼肉 おくう",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140309/14010618/",
+rating: 3.57,
+dinner_price: "￥4,000～￥4,999",
+lunch_price: "￥4,000～￥4,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/182316/320x320_square_d48653bf3b9b8a4891c738595e1153f1.jpg",
+google_map_rating: 4.1,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 1
+},
+{
+shop_name: "みなとみらいde 焼肉 DOURAKU",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140103/14045869/",
+rating: 3.46,
+dinner_price: "￥3,000～￥3,999",
+lunch_price: "￥3,000～￥3,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/15606/320x320_square_15606957.jpg",
+google_map_rating: 3.7,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 1
+},
+{
+shop_name: "ひゃら亭",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140203/14000704/",
+rating: 3.59,
+dinner_price: "￥4,000～￥4,999",
+lunch_price: "￥4,000～￥4,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/3401/320x320_square_3401260.jpg",
+google_map_rating: 4.4,
+retty_familiar_genre: "",
+retty_familiar_stars: 0
+},
+{
+shop_name: "李さんの台所",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140102/14004355/",
+rating: 3.47,
+dinner_price: "￥3,000～￥3,999",
+lunch_price: "￥3,000～￥3,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/75029/320x320_square_75029545.jpg",
+google_map_rating: 2.7,
+retty_familiar_genre: "韓国料理",
+retty_familiar_stars: 0
+},
+{
+shop_name: "横浜 うしみつ",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14083688/",
+rating: 3.64,
+dinner_price: "￥8,000～￥9,999",
+lunch_price: "￥8,000～￥9,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/156557/320x320_square_156557825.jpg",
+google_map_rating: 3.8,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 1
+},
+{
+shop_name: "ヤンさんの台所",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140102/14008500/",
+rating: 3.46,
+dinner_price: "￥3,000～￥3,999",
+lunch_price: "￥3,000～￥3,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/34938/320x320_square_34938694.jpg",
+google_map_rating: 4,
+retty_familiar_genre: "韓国料理",
+retty_familiar_stars: 0
+},
+{
+shop_name: "野毛 ☆ 大夢",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140102/14035701/",
+rating: 3.46,
+dinner_price: "￥2,000～￥2,999",
+lunch_price: "￥2,000～￥2,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/9452/320x320_square_9452158.jpg",
+google_map_rating: 4.1,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 1
+},
+{
+shop_name: "黒毛和牛一頭買焼肉 醍醐 横浜店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14013330/",
+rating: 3.35,
+dinner_price: "￥4,000～￥4,999",
+lunch_price: "￥4,000～￥4,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/112165/320x320_square_112165886.jpg",
+google_map_rating: 3.9
+},
+{
+shop_name: "あけぼの食堂 横浜苑2号店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14004678/",
+rating: 3.42,
+dinner_price: "￥4,000～￥4,999",
+lunch_price: "￥4,000～￥4,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/44893/320x320_square_44893229.jpg",
+google_map_rating: 4
+},
+{
+shop_name: "焼肉 横濱 慶州苑 新横浜店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140206/14009696/",
+rating: 3.45,
+dinner_price: "￥3,000～￥3,999",
+lunch_price: "￥3,000～￥3,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/20235/320x320_square_20235797.jpg",
+google_map_rating: 4
+},
+{
+shop_name: "USHIHACHI 青葉台店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140202/14067243/",
+rating: 3.36,
+dinner_price: "￥5,000～￥5,999",
+lunch_price: "￥5,000～￥5,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/187129/320x320_square_c2badfb005624597790fe8e13c0186be.jpg",
+google_map_rating: 3.9,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 0
+},
+{
+shop_name: "肉山 横浜",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140105/14068671/",
+rating: 3.5,
+dinner_price: "￥5,000～￥5,999",
+lunch_price: "￥5,000～￥5,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/182517/320x320_square_d0801c8045928b4c6289487f464a15b0.jpg",
+google_map_rating: 4.2,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 2
+},
+{
+shop_name: "おくう 戸塚店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140305/14035384/",
+rating: 3.47,
+dinner_price: "￥4,000～￥4,999",
+lunch_price: "￥4,000～￥4,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/182315/320x320_square_d48653bf3b9b8a4891c738595e1153f1.jpg",
+google_map_rating: 3.9,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 0
+},
+{
+shop_name: "アリラン亭 横浜西口店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14002066/",
+rating: 3.42,
+dinner_price: "￥5,000～￥5,999",
+lunch_price: "￥5,000～￥5,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/183215/320x320_square_e97ea14a649009e55ad007db26c6e73a.jpg",
+google_map_rating: 3.9,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 0
+},
+{
+shop_name: "匠家33",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140104/14051741/",
+rating: 3.44,
+dinner_price: "￥8,000～￥9,999",
+lunch_price: "￥8,000～￥9,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/72014/320x320_square_72014312.jpg",
+google_map_rating: 4.1,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 2
+},
+{
+shop_name: "天山",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14003722/",
+rating: 3.45,
+dinner_price: "￥4,000～￥4,999",
+lunch_price: "￥4,000～￥4,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/185726/320x320_square_aaee70cc56fc890e71b3aa3cf35472ea.jpg",
+google_map_rating: 4.2,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 2
+},
+{
+shop_name: "壱語屋 青葉台店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140202/14002715/",
+rating: 3.42,
+dinner_price: "￥4,000～￥4,999",
+lunch_price: "￥4,000～￥4,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/3147/320x320_square_3147380.jpg",
+google_map_rating: 4.1
+},
+{
+shop_name: "熟成和牛焼肉エイジング・ビーフ 横浜店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140212/14073774/",
+rating: 3.56,
+dinner_price: "￥6,000～￥7,999",
+lunch_price: "￥6,000～￥7,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/85491/320x320_square_85491700.jpg",
+google_map_rating: 4.2
+},
+{
+shop_name: "炭火焼肉ホルモン うらら",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140201/14084640/",
+rating: 3.76,
+dinner_price: "￥5,000～￥5,999",
+lunch_price: "￥5,000～￥5,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/185890/320x320_square_8b7666f66c2f5f332048764413bf2589.jpg",
+google_map_rating: 4.1,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 1
+},
+{
+shop_name: "鉄板焼　勝治",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140305/14046878/",
+rating: 3.63,
+dinner_price: "￥4,000～￥4,999",
+lunch_price: "￥4,000～￥4,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/63977/320x320_square_63977704.jpg",
+google_map_rating: 4,
+retty_familiar_genre: "",
+retty_familiar_stars: 0
+},
+{
+shop_name: "焼肉トラジ 横浜モアーズ店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14061465/",
+rating: 3.22,
+dinner_price: "￥5,000～￥5,999",
+lunch_price: "￥5,000～￥5,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/137864/320x320_square_137864926.jpg",
+google_map_rating: 4.1
+},
+{
+shop_name: "東海苑",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140205/14008695/",
+rating: 3.63,
+dinner_price: "￥6,000～￥7,999",
+lunch_price: "￥6,000～￥7,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/187103/320x320_square_eabf092f3843ae4e3ae1e1e919de5e5e.jpg",
+google_map_rating: 4,
+retty_familiar_genre: "",
+retty_familiar_stars: 0
+},
+{
+shop_name: "ホルモン専門店 烈",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14036204/",
+rating: 3.41,
+dinner_price: "￥4,000～￥4,999",
+lunch_price: "￥4,000～￥4,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/10707/320x320_square_10707717.jpg",
+google_map_rating: 4.1,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 1
+},
+{
+shop_name: "ホルモン焼 がま親分",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140102/14002156/",
+rating: 3.38,
+dinner_price: "￥2,000～￥2,999",
+lunch_price: "￥2,000～￥2,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/55839/320x320_square_55839257.jpg",
+google_map_rating: 3.9
+},
+{
+shop_name: "炭火焼肉 ドラゴンカルビ",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140103/14003651/",
+rating: 3.42,
+dinner_price: "￥4,000～￥4,999",
+lunch_price: "￥4,000～￥4,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/42252/320x320_square_42252773.jpg",
+google_map_rating: 3.3
+},
+{
+shop_name: "壱語屋  市ケ尾店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140201/14010407/",
+rating: 3.45,
+dinner_price: "￥5,000～￥5,999",
+lunch_price: "￥5,000～￥5,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/3147/320x320_square_3147380.jpg",
+google_map_rating: 3.7,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 0
+},
+{
+shop_name: "焼肉 横濱慶州苑 菊名店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140205/14009515/",
+rating: 3.44,
+dinner_price: "￥6,000～￥7,999",
+lunch_price: "￥6,000～￥7,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/173083/320x320_square_b440aa5d40800ff6d6bc76b3b4a49c18.jpg",
+google_map_rating: 4.1
+},
+{
+shop_name: "杏樹亭 岸根店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140206/14011715/",
+rating: 3.61,
+dinner_price: "￥5,000～￥5,999",
+lunch_price: "￥5,000～￥5,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/161390/320x320_square_161390024.jpg",
+google_map_rating: 4,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 2
+},
+{
+shop_name: "本格焼肉 カンゲン",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140103/14035694/",
+rating: 3.44,
+dinner_price: "￥3,000～￥3,999",
+lunch_price: "￥3,000～￥3,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/141808/320x320_square_141808403.jpg",
+google_map_rating: 3.8,
+retty_familiar_genre: "焼肉",
+retty_familiar_stars: 0
+},
+{
+shop_name: "焼肉 どうらく 横浜西口本店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14031021/",
+rating: 3.31,
+dinner_price: "￥3,000～￥3,999",
+lunch_price: "￥3,000～￥3,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/16188/320x320_square_16188750.jpg",
+google_map_rating: 3.9
+},
+{
+shop_name: "叙々苑 横浜港北店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140203/14001726/",
+rating: 3.19,
+dinner_price: "￥5,000～￥5,999",
+lunch_price: "￥5,000～￥5,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/187379/320x320_square_f4d8650da8375a83b56ea3c6f50e8886.jpg",
+google_map_rating: 4,
+retty_familiar_genre: "",
+retty_familiar_stars: 0
+},
+{
+shop_name: "USHIHACHI あざみ野",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140201/14070185/",
+rating: 3.31,
+dinner_price: "￥5,000～￥5,999",
+lunch_price: "￥5,000～￥5,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/187129/320x320_square_c2badfb005624597790fe8e13c0186be.jpg",
+google_map_rating: 3.7,
+retty_familiar_genre: "",
+retty_familiar_stars: 0
+},
+{
+shop_name: "焼肉 東京山",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140105/14013921/",
+rating: 3.46,
+dinner_price: "￥4,000～￥4,999",
+lunch_price: "￥4,000～￥4,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/18735/320x320_square_18735395.jpg",
+google_map_rating: 4
+},
+{
+shop_name: "韓国家庭料理 さらん房",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140201/14005526/",
+rating: 3.35,
+dinner_price: "￥2,000～￥2,999",
+lunch_price: "￥2,000～￥2,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/57402/320x320_square_57402038.jpg",
+google_map_rating: 3.7
+},
+{
+shop_name: "焼肉ライク 横浜鶴屋町店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140101/14074730/",
+rating: 3.33,
+dinner_price: "￥1,000～￥1,999",
+lunch_price: "￥1,000～￥1,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/122065/320x320_square_122065745.jpg",
+google_map_rating: 3.8,
+retty_familiar_genre: "",
+retty_familiar_stars: 0
+},
+{
+shop_name: "豚ちんかん",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140102/14028979/",
+rating: 3.41,
+dinner_price: "￥4,000～￥4,999",
+lunch_price: "￥4,000～￥4,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/87797/320x320_square_87797358.jpg",
+google_map_rating: 3.2,
+retty_familiar_genre: "",
+retty_familiar_stars: 0
+},
+{
+shop_name: "焼肉ホルモン座 ちからや本店 横浜駅南幸店",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140102/14007480/",
+rating: 3.33,
+dinner_price: "￥2,000～￥2,999",
+lunch_price: "￥2,000～￥2,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/16189/320x320_square_16189267.jpg",
+google_map_rating: 3.6
+},
+{
+shop_name: "スモーキー",
+shop_url: "https://tabelog.com/kanagawa/A1401/A140201/14003417/",
+rating: 3.35,
+dinner_price: "￥3,000～￥3,999",
+lunch_price: "￥3,000～￥3,999",
+main_image: "https://tblg.k-img.com/restaurant/images/Rvw/134890/320x320_square_134890995.jpg",
+google_map_rating: 4.2,
+retty_familiar_genre: "",
+retty_familiar_stars: 0
+}
+]
+}

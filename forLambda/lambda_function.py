@@ -16,21 +16,17 @@ import logging
 logger = logging.getLogger()
 
 def lambda_handler(event, context):
-    # shop_list, url = tabelog_search_query("横浜", "焼肉", context)
     shop_list = tabelog_search_query("横浜", "焼肉", context)
+    # shop_list = event
     shop_list = get_google_map_info(shop_list)
     shop_list = get_retty_info(shop_list)
-        
-    print(shop_list)
-    
+
     return {
         'statusCode': 200,
-        "body": shop_list #shop_list
-            # json.dumps({
-            # "google_res": google_res,
-            # "tabelog_res": json.dumps(tabelog_res),
-            # "retty_res": retty_res,
-        # }, ensure_ascii=False)
+        "body": 
+            json.dumps({
+            "res":shop_list
+        }, ensure_ascii=False)
         #'body': json.dumps('Hello from Lambda!')
     }
 
@@ -104,7 +100,9 @@ def get_google_map_info(shop_list):
     for shop_dict in shop_list:
         shop_name = shop_dict["shop_name"]
         place_id = google_map_search_id(shop_name)
-        shop_dict["google_map_rating"] = google_map_shop_details(place_id)
+        rating = google_map_shop_details(place_id)
+        if (rating != 0.0):
+            shop_dict["google_map_rating"] = rating
     return shop_list
     
 def google_map_shop_details(place_id):
@@ -122,7 +120,11 @@ def google_map_shop_details(place_id):
        
     #   https://gaaaon.jp/blog/google_map_api
     # ["result"]["photos"]から画像が取れる
-    return body["result"]["rating"]
+    try: 
+        rating = body["result"]["rating"]
+    except KeyError:
+        rating = 0.0
+    return rating
     
 def google_map_search_id(search_query_keyword):
     APIKey = os.environ['GOOGLEMAPAPI']
@@ -140,21 +142,34 @@ def google_map_search_id(search_query_keyword):
     
 def get_retty_info(shop_list):
     baseurl = "https://retty.me/restaurant-search/search-result/?free_word_category="
+    
     for shop_dict in shop_list:
         search_query_quote = urllib.parse.quote(shop_dict["shop_name"])
-        r = requests.get(baseurl + search_query_quote)
+        headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36"}
+        r = requests.get(baseurl + search_query_quote)#, headers=headers)
         soup = BeautifulSoup(r.content, 'html.parser')
-        shop_element = soup.find("div", class_="restaurant")
+        header = soup.find("header", class_="search-result__header")
+        
+        #通常のレスポンスと違うソースが帰ってくるので探索
+        shop_element = header.next_sibling.find_next_sibling("div").get(":restaurants")
+        
+        #お店がなかったとき
         if shop_element is not None:
-            shop_dict["retty_url"] = shop_element.find("a", "")
-            if shop_element.find("familiar-label__title") is not None:
-                genre = shop_element.find("div", class_= "familiar-label__genre")
-                popularity = shop_element.find("div", class_= "familiar-label__popularity")
-                shop_dict["retty_popular"] = genre + popularity
-                shop_dict["retty_popular_stars"] = len(shop_element.find_all("svg", class_="familiar-label__stars"))
+            #ダブルクオーテーションで囲まないとエラーになる
+            shop_element = json.loads(shop_element.replace("'", '"'))[0]
+            if shop_element["familiarAttribute"] is not None:
+                try:
+                    genre = shop_element["familiarAttribute"]["category"]["name"]#.decode('unicode-escape')
+                    popularity = shop_element["familiarAttribute"]["level"]
+                    shop_dict["retty_familiar_genre"] = genre
+                    shop_dict["retty_familiar_stars"] = popularity
+                except KeyError:
+                    shop_dict["retty_familiar_genre"] = ""
+                    shop_dict["retty_familiar_stars"] = 0
             else:
-                shop_dict["retty_popular"] = ""
-                shop_dict["retty_popular_stars"] = 0
+                shop_dict["retty_familiar_genre"] = ""
+                shop_dict["retty_familiar_stars"] = 0
+            
     return shop_list
     
 def setting_chromium():
