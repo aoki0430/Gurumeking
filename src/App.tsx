@@ -1,13 +1,18 @@
 import TopPage from "./pages/toppage";
 import { RecoilRoot } from "recoil";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import ShopList from "./pages/shoplist";
 
 function App() {
 	return (
-		<RecoilRoot>
-			<div className="App">
-				<TopPage />
-			</div>
-		</RecoilRoot>
+		<Router>
+			<RecoilRoot>
+				<Routes>
+					<Route index element={<TopPage />} />
+					<Route path="shoplist" element={<ShopList />} />
+				</Routes>
+			</RecoilRoot>
+		</Router>
 	);
 }
 

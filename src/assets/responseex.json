@@ -1,0 +1,46 @@
+{
+	"res": [
+		{
+			"shop_name": "しげ吉 横浜元町店",
+			"shop_url": "https://tabelog.com/kanagawa/A1401/A140105/14014011/",
+			"rating": 3.67,
+			"dinner_price": "￥5,000～￥5,999",
+			"lunch_price": "￥5,000～￥5,999",
+			"main_image": "https://tblg.k-img.com/restaurant/images/Rvw/10309/320x320_square_10309485.jpg",
+			"google_map_rating": 4.3,
+			"retty_familiar_genre": "焼肉",
+			"retty_familiar_stars": 2
+		},
+		{
+			"shop_name": "ビーフキッチン 横浜店",
+			"shop_url": "https://tabelog.com/kanagawa/A1401/A140101/14031061/",
+			"rating": 3.55,
+			"dinner_price": "￥6,000～￥7,999",
+			"lunch_price": "￥6,000～￥7,999",
+			"main_image": "https://tblg.k-img.com/restaurant/images/Rvw/147391/320x320_square_147391309.jpg",
+			"google_map_rating": 4.2
+		},
+		{
+			"shop_name": "関内苑 本店",
+			"shop_url": "https://tabelog.com/kanagawa/A1401/A140104/14002802/",
+			"rating": 3.58,
+			"dinner_price": "￥6,000～￥7,999",
+			"lunch_price": "￥6,000～￥7,999",
+			"main_image": "https://tblg.k-img.com/restaurant/images/Rvw/150602/320x320_square_150602878.jpg",
+			"google_map_rating": 4.2,
+			"retty_familiar_genre": "焼肉",
+			"retty_familiar_stars": 2
+		},
+		{
+			"shop_name": "野毛ホルモンセンター",
+			"shop_url": "https://tabelog.com/kanagawa/A1401/A140102/14045993/",
+			"rating": 3.49,
+			"dinner_price": "￥2,000～￥2,999",
+			"lunch_price": "￥2,000～￥2,999",
+			"main_image": "https://tblg.k-img.com/restaurant/images/Rvw/40419/320x320_square_40419868.jpg",
+			"google_map_rating": 4.1,
+			"retty_familiar_genre": "ホルモン",
+			"retty_familiar_stars": 2
+		}
+	]
+}
