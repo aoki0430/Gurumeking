@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.5.0]
+        node-version: [16.16.0]
 
     steps:
     # masterブランチをチェックアウト
