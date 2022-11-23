@@ -3,7 +3,7 @@ name: CI
 # トリガーの設定
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 # ジョブの設定（直列に動かしたり並行に動かしたり指定できる）
 # 今回はbuildジョブとdeployジョブの2つを設定します
