@@ -1,6 +1,6 @@
 import TopPage from "./pages/toppage";
 import { RecoilRoot } from "recoil";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ShopList from "./pages/shoplist";
 
 function App() {

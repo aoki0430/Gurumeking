@@ -17,7 +17,7 @@ const TopPage = () => {
 	const onInputKeyword = (event: React.FormEvent<HTMLInputElement>) => {
 		setKeywordQuery(event.currentTarget.value);
 	};
-	const onClickSearch = (event: React.MouseEvent<HTMLButtonElement>) => {
+	const onClickSearch = () => {
 		navigate("/shoplist", {
 			state: {
 				areaQuery: areaQuery,
