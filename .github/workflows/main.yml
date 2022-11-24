@@ -30,7 +30,7 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: build
-        path: public/
+        path: build/
 
   deploy:
     # ジョブは並行で動くので前後関係の指定が必要
